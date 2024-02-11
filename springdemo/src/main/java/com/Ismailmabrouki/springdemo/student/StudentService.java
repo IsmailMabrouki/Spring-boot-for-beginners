@@ -8,24 +8,11 @@ import java.util.List;
 
 
 @Service
-public class StudentService {
+public interface StudentService {
+    Student save(Student s);
+    List<Student> findAllStudents();
+    Student findByEmail(String email);
 
-    public List<Student> findAllStudents() {
-        return List.of(
-                new Student(
-                        "Ismail",
-                        "Mabrouki",
-                        LocalDate.now(),
-                        "ismailmabrouki98@gmail.com",
-                        25
-                ),
-                new Student(
-                        "Ahmed1",
-                        "Mabrouki",
-                        LocalDate.now(),
-                        "med@gmail.com",
-                        20
-                )
-        );
-    }
+    Student update(Student s);
+    void delete(String email);
 }
