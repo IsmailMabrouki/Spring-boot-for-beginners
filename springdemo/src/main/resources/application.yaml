@@ -1,8 +1,8 @@
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/student_db
-    username: esip
-    password: esip
+    username: aeisel
+    password: toor
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
